@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --familia-fuente-titulos: "Sour Gummy", sans-serif;
+    --color-primario:#AEE1F1;
+    --color-secundario: #56c3e4;
+}
+
+body{
+    font-family: var(--familia-fuente-titulos);
+}
+
+.bg-marron{
+    background-color: var(--color-secundario);
+}
+
+.fa-whatsapp{
+    font-size: 5em;
+    color:#25d366;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.principalIndex{
+    background-image: url(../assets/img/fondo_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .contenedorTextoPrincipalIndex{
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+        border: 2px transparent white;
+        border-radius: 10px;
+        width: 50%;
+        font-size: 10px;
+        color: #333333;
+        background-color:#eae2e25c ;
+        p{
+            font-size: 1.5rem;
+            color: #333333
+        }
+        a{
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 1.5rem;
+            border: 1px solid gray;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 5px 6px 3px -3px rgba(0,0,0,0.29);
+        }
+    }
+}
+.colorTexto1 {
+    color: #333333; 
+  }
+  
+.nav-fijo{ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+/*Botones*/
+.btn-primary {
+    color: #fff;
+    background-color: #AEE1F1;
+    border-color: #AEE1F1;
+    font-size: 12px;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #56c3e4;
+    border-color: #56c3e4;
+    font-size: 12px;
+  }
+.btn-success{
+    color: #212529;
+    background-color: #AEE1F1;
+    border-color: #AEE1F1;
+    font-size: 12px;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #56c3e4;
+    border-color: #56c3e4;
+  }
+
+.nav-item{
+    font-size: 1.5rem;
+}
+
+.productosDestacados{
+    img{
+        width: 30%;
+        border: 2px solid #a598f4;
+    }
+    h2{
+        text-align: center;
+    } 
+}
+
+.galeria{
+    width: 90%;
+    margin: 0 auto;
+    height: 85vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid grey;
+    
+}
+.galeria img{
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+.galeria img:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.carrousel-container{
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-40{
+    width: 40%;
+    padding-top: 30px;
+}
+.col-60{
+    width: 60%;
+}
+.negrita{
+    font-weight: bold;
+}
+
+
+
+.footer{
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #aeaeae;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    line-height: 1.2;
+    justify-content: space-between;
+    a{
+        color: #333333;
+        text-decoration: none;
+    }
+    .contenedorFooterMenu{
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        color: #333333;
+    }
+    .contenedorFooterContacto{
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .contenedorRedes{
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 120px;
+        text-align: center;
+        .footerItems{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footerIconos{
+            display: flex;
+            gap: 15px;
+        }
+    }
+}
+.contenedorFooter{
+    background-color: #aeaeae;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-img-top{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.card-body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 200px;
+    text-align: center;
+    p{
+        line-height: 1;
+    }
+}
+.card-title{
+        font-size: 14px;
+        margin-bottom: .2rem;
+        margin-top: .1rem;
+}
+
+.nosotrosImagen{
+    background-image: url('../assets/img/nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.grillaContacto{
+    .card{
+        width: 180px;
+        height: 150px;
+    }
+}
+
+.grillaMensaje{
+    .card{
+        width: 480px;
+        height: 380px;
+        padding: 10px;
+    }
+   
+}
+
+.container{
+    padding-bottom: 20px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+#totalCarrito {
+font-size: 1.5rem;
+color: #212529;
+}
+
+#cantidadProductos {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.mt-3 {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+}
+h4, h3 {
+    margin: 0;
+}
+ 
+.ml-auto {
+margin-left: auto;
+}
